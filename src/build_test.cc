@@ -4144,16 +4144,6 @@ void BuildTokenTest::EnqueueBooleans(vector<bool>& booleans, int count, va_list 
   }
 }
 
-TEST_F(BuildTokenTest, CompleteNoWork) {
-  // plan should not execute anything
-  string err;
-
-  EXPECT_TRUE(builder_.Build(&err));
-  EXPECT_EQ("", err);
-
-  EXPECT_EQ(0u, token_command_runner_.commands_ran_.size());
-}
-
 TEST_F(BuildTokenTest, DoNotAquireToken) {
   // plan should execute one command
   string err;
