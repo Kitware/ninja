@@ -1,3 +1,25 @@
+Kitware maintains this branch of Ninja in order to provide features
+that have not yet been integrated upstream:
+
+* make-style jobserver support
+
+This branch may be *rebased* without notice for maintenance on top of
+the upstream `master` branch.  It will be removed once upstream has
+integrated the features.
+
+Parts of this branch are under upstream consideration:
+
+* https://github.com/ninja-build/ninja/pull/1140
+
+As each PR is accepted additional parts of this branch will be submitted
+incrementally.
+
+Binaries built from versions of this branch are available here:
+
+* https://github.com/Kitware/ninja/releases
+
+-----------------------------------------------------------------------------
+
 # Ninja
 
 Ninja is a small build system with a focus on speed.
